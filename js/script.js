@@ -25,19 +25,21 @@ eventosInteraccion.forEach(evento => {
 });
 
 function desplegardatos1() {
-
     const nombre = "Luis Roberto Miranda de la Cruz";
-    const matricula = "100032490"; 
-    const carrera = "Licenciatura en sistema computacionales";
-    const semestre = "5-K";
+    const matricula = "Tu matricula"; 
+    const carrera = "Ingeniería en Sistemas Computacionales";
+    const semestre = "5to Semestre";
 
-ls
-    const texto = `Nombre: ${nombre} | Matricula: ${matricula} | Carrera: ${carrera} | Semestre: ${semestre}`;
-
+    const texto = `
+        <strong>Nombre:</strong> ${nombre} <br>
+        <strong>Matrícula:</strong> ${matricula} <br>
+        <strong>Carrera:</strong> ${carrera} <br>
+        <strong>Semestre:</strong> ${semestre}
+    `;
 
     const resultados = document.getElementById('resultados');
     resultados.innerHTML = texto;
-    resultados.style.display = "block"; 
+    resultados.style.display = "block"; // Lo mostramos
 }
 
 
